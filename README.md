@@ -37,7 +37,7 @@ This portfolio showcases my creative work and projects using modern web technolo
 
 ## 📬 Contact
 
-<p>For inquiries, please email <a href="mailto:hi@yudeshika.com">hi@yudeshika.com</a>.</p>
+<p>For inquiries, please email <a href="mailto:hello@yudeshika.com">hello@yudeshika.com</a>.</p>
 OR
 <p>For inquiries, please email <a href="mailto:yudeshika@gmail.com">yudeshika@gmail.com</a>.</p>
 

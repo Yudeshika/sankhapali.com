@@ -23,17 +23,21 @@ const Bird = () => {
         // update the y position of the bird to simulate a flying effect/ sin wave
             birdRef.current.position.y = Math.sin(clock.elapsedTime) * 0.5 + 2;
 
-            if(birdRef.current.rotation.x > camera.position.x + 10) {
+            // check if the bird is out of the camera view
+            if(birdRef.current.position.x > camera.position.x + 10) {
+                // rotate the bird to face the opposite direction
                 birdRef.current.rotation.y = Math.PI;
-            }else if(birdRef.current.rotation.x < camera.position.x - 10) {
+            }else if(birdRef.current.position.x < camera.position.x - 10) {
+                // change direction to forward and reset the bird's rotation
                 birdRef.current.rotation.y = 0;
             }
 
+            // update the x and z position of the bird to simulate a flying effect
             if(birdRef.current.rotation.y === 0) {
-                console.log('rotating bird');
                 birdRef.current.position.x += 0.01;
                 birdRef.current.position.z -= 0.01;
             }else {
+                // moving the bird in the opposite direction/backward
                 birdRef.current.position.x -= 0.01;
                 birdRef.current.position.z += 0.01;
             }

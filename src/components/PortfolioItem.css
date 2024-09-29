@@ -1,0 +1,40 @@
+.portfolio-item {
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .portfolio-item .carousel .slide img {
+    border-radius: 8px;
+  }
+  
+  .portfolio-item .carousel .control-dots .dot {
+    background: #007bff;
+  }
+  
+  .portfolio-item .carousel .control-arrow {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .portfolio-item .carousel .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .portfolio-item .card-header {
+    background: #007bff;
+    color: #fff;
+  }
+  
+  .portfolio-item .list-group-item {
+    border: none;
+    padding-left: 0;
+  }
+  
+  .portfolio-item .d-flex {
+    margin-top: 10px;
+  }
+  
+  .portfolio-item .d-flex .align-items-center {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  

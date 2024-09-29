@@ -3,50 +3,18 @@ import PortfolioItem from '../components/PortfolioItem';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 
-const portfolios = [
-  {
-    name: "My Awesome Project",
-    screenshots: [
-      "https://placeholder.com/400x300",
-      "https://placeholder.com/400x300",
-      "https://placeholder.com/400x300",
-    ],
-    highlights: [
-      "Implemented user authentication",
-      "Responsive design",
-      "Integration with third-party APIs",
-    ],
-    technologies: [
-      { name: "React", icon: <FaReact size={30} /> },
-      { name: "Node.js", icon: <FaNodeJs size={30} /> },
-      { name: "Database", icon: <FaDatabase size={30} /> },
-    ],
-  },
-  {
-    name: "My Awesome Project",
-    screenshots: [
-      "https://placeholder.com/400x300",
-      "https://placeholder.com/400x300",
-      "https://placeholder.com/400x300",
-    ],
-    highlights: [
-      "Implemented user authentication",
-      "Responsive design",
-      "Integration with third-party APIs",
-    ],
-    technologies: [
-      { name: "React", icon: <FaReact size={30} /> },
-      { name: "Node.js", icon: <FaNodeJs size={30} /> },
-      { name: "Database", icon: <FaDatabase size={30} /> },
-    ],
-  }
-];
+import portfolios from '../data/projects.json';
 
 const projects = () => {
   return (
-    <div className="mt-10">
-      <div className="container mt-10">
-        <h1>Portfolio Projects</h1>
+    <div className="flex items-center justify-center w-full mt-20"
+    style={{ 
+      backgroundImage: 'url(/images/bg-about.png)', 
+      backgroundRepeat: 'repeat-y' 
+    }}
+    >
+      <div className="container max-w-screen-xl">
+        <h1 className="text-blue-100 text-3xl py-10">Portfolio Projects</h1>
 
         {portfolios.map((project, index) => (
           <PortfolioItem key={index} project={project} />

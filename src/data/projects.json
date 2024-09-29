@@ -1,0 +1,105 @@
+[
+    {
+      "name": "Mi-Dashboard (Australia)",
+      "description": "Portal for Restaurant owners to see their day today sales reports, manage catelogue & bring online menu.",
+      "screenshots": [
+        "/images/portfolio/midash/1.png",
+        "/images/portfolio/midash/2.png",
+        "/images/portfolio/midash/3.png",
+        "/images/portfolio/midash/4.png"
+      ],
+      "highlights": [
+        "Sales overview graphs",
+        "Major sales reports (cashflow, product/category sales, profit & tax)",
+        "Manage major entities such as categories, products, floors, tables)",
+        "Recieve & Manage online /QR orders.",
+        "Manage configuration for online/offline , open hours.",
+        "Sync sales up & down from/to POS system (unicenta)",
+        "Online/QR menu cart & stripe IPG integration."
+      ],
+      "technologies": [
+        { "name": "HTML", "icon": "html" },
+        { "name": "CSS", "icon": "css" },
+        { "name": "JavaScript", "icon": "js" },
+        { "name": "jQuery", "icon": "jquery" },
+        { "name": "Bootstrap", "icon": "bootstrap" },
+        { "name": "PHP", "icon": "php" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Laravel", "icon": "laravel" },
+        { "name": "GIT", "icon": "git" },
+        { "name": "NPM", "icon": "npm" },
+        { "name": "Webpack", "icon": "webpack" },
+        { "name": "Vue", "icon": "vue" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Bitbucket", "icon": "bitbucket" }
+      ]
+    },
+    {
+      "name": "Complaint Management System (SL)",
+      "description": "Complaint & Compliance management system for environmental complaints from the public.",
+      "screenshots": [
+        "/images/portfolio/cea/1.png",
+        "/images/portfolio/cea/2.png",
+        "/images/portfolio/cea/3.png",
+        "/images/portfolio/cea/4.png"
+      ],
+      "highlights": [
+        "Island-wide, Province and District wise data cluster.",
+        "Manage complaints with sector, group and license information.",
+        "Upload PDF scanned coppies and generate letters with templates.",
+        "Complaint status flow management.",
+        "Complaint status flow management.",
+        "Inspections / Visits record keeping",
+        "Geo location map representation with geo fencing.",
+        "Online complaint lodge functionality through official website.",
+        "Generate dashboar with graphs and cards and summaries."
+      ],
+      "technologies": [
+        { "name": "HTML", "icon": "html" },
+        { "name": "CSS", "icon": "css" },
+        { "name": "JavaScript", "icon": "js" },
+        { "name": "jQuery", "icon": "jquery" },
+        { "name": "Tailwind", "icon": "tailwind" },
+        { "name": "PHP", "icon": "php" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Laravel", "icon": "laravel" },
+        { "name": "GIT", "icon": "git" },
+        { "name": "NPM", "icon": "npm" },
+        { "name": "Webpack", "icon": "webpack" },
+        { "name": "Docker", "icon": "docker" },
+        { "name": "Bitbucket", "icon": "bitbucket" }
+      ]
+    },
+    {
+      "name": "Learn Guide.LK (SL)",
+      "description": "Video on demand platform for educators to bring there previous lessons to generate extra income.",
+      "screenshots": [
+        "/images/portfolio/learnguide/1.png",
+        "/images/portfolio/learnguide/2.png"
+      ],
+      "highlights": [
+        "This is customization of existing code base purchased.",
+        "Implemented SMS OTP verification on sign up process.",
+        "Adjusted the design and layout according to client feedback.",
+        "Integrated Vimeo platform through API to bring videos",
+        "Integrated Local payment gateway called Payhere.",
+        "Integrated video protection in places for paid users .",
+        "Implemented a expiration machanism from paid date."
+      ],
+      "technologies": [
+        { "name": "HTML", "icon": "html" },
+        { "name": "CSS", "icon": "css" },
+        { "name": "JavaScript", "icon": "js" },
+        { "name": "jQuery", "icon": "jquery" },
+        { "name": "PHP", "icon": "php" },
+        { "name": "MySQL", "icon": "mysql" },
+        { "name": "Laravel", "icon": "laravel" },
+        { "name": "GIT", "icon": "git" },
+        { "name": "NPM", "icon": "npm" },
+        { "name": "Webpack", "icon": "webpack" },
+        { "name": "Ubuntu", "icon": "ubuntu" },
+        { "name": "AWS", "icon": "aws" },
+        { "name": "Bitbucket", "icon": "bitbucket" }
+      ]
+    }
+]

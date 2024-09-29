@@ -9,7 +9,7 @@ const about = () => {
       backgroundRepeat: 'no-repeat' 
     }}
     >
-        <div className="container py-10 max-w-screen-lg mx-20">
+        <div className="container py-10 max-w-screen-lg sm:mx-20">
             <div className="row">
                 <div className="col-xs-12">
                     <div className="title  wow zoomIn animated">

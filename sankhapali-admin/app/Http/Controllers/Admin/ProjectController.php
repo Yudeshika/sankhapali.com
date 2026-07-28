@@ -20,7 +20,7 @@ class ProjectController extends Controller
      */
     public function index(): Response
     {
-        return Inertia::render('Admin/projects/Index', [
+        return Inertia::render('Admin/Projects/Index', [
             'projects' => Project::orderBy('sort_order')->get(),
         ]);
     }
@@ -30,7 +30,7 @@ class ProjectController extends Controller
      */
     public function create(): Response
     {
-        return Inertia::render('Admin/projects/Create');
+        return Inertia::render('Admin/Projects/Create');
     }
 
     /**
@@ -49,7 +49,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project): Response
     {
-        return Inertia::render('Admin/projects/Show', [
+        return Inertia::render('Admin/Projects/Show', [
             'project' => $project,
         ]);
     }
@@ -59,7 +59,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project): Response
     {
-        return Inertia::render('Admin/projects/Edit', [
+        return Inertia::render('Admin/Projects/Edit', [
             'project' => $project,
         ]);
     }

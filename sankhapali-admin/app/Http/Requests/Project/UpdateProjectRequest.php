@@ -41,6 +41,10 @@ class UpdateProjectRequest extends FormRequest
             'slug' => ['required', 'string', 'max:256', 'unique:projects,slug,' . $this->route('project')->id],
             'sort_order' => ['nullable', 'integer'],
             'is_published' => ['nullable', 'boolean'],
+            'screenshots' => ['nullable', 'array'],
+            'screenshots.*' => ['nullable', 'file', 'mimes:jpeg,png,jpg', 'max:2048'],
+            'keep_media' => ['nullable', 'array'],
+            'keep_media.*' => ['integer', 'exists:media,id'],
         ];
     }
 

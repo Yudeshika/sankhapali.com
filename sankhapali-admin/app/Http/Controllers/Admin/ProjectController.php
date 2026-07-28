@@ -38,7 +38,7 @@ class ProjectController extends Controller
      */
     public function store(StoreProjectRequest $request, CreateProjectAction $createProjectAction): RedirectResponse
     {
-        $project = $createProjectAction->handle($request->validated());
+        $createProjectAction->handle($request->validated(), $request->file('screenshots', []));
 
         return redirect()->route('admin.projects.index')
             ->with('success', 'Project created successfully.');
@@ -69,7 +69,7 @@ class ProjectController extends Controller
      */
     public function update(UpdateProjectRequest $request, Project $project, UpdateProjectAction $updateProjectAction): RedirectResponse
     {
-        $updateProjectAction->handle($project, $request->validated());
+        $updateProjectAction->handle($project, $request->validated(), $request->file('screenshots', []));
 
         return redirect()->route('admin.projects.index')
             ->with('success', 'Project updated successfully.');

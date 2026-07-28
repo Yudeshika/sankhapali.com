@@ -6,7 +6,7 @@ use App\Models\Project;
 
 class CreateProjectAction
 {
-    public function handle(array $data): Project
+    public function handle(array $data, array $screenshots = []): Project
     {
         $project = Project::create([
             'title' => $data['title'],
@@ -16,6 +16,10 @@ class CreateProjectAction
             'sort_order' => $data['sort_order'] ?? null,
             'is_published' => $data['is_published'],
         ]);
+
+        foreach ($screenshots as $screenshot) {
+            $project->addMedia($screenshot)->toMediaCollection('screenshots');
+        }
 
         $project->technologies()->sync($data['technologies'] ?? []);
 

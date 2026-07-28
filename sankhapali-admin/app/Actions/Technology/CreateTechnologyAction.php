@@ -10,7 +10,7 @@ class CreateTechnologyAction
     {
         $technology = Technology::create([
             'name' => $data['name'],
-            'sort_order' => $data['sort_order'],
+            'sort_order' => $data['sort_order'] ?? 0,
             'icon_slug' => $data['icon_slug'] ?? null,
         ]);
 

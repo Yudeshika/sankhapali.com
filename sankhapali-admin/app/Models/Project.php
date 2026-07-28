@@ -25,4 +25,9 @@ class Project extends Model
         'is_published' => 'boolean',
         'sort_order' => 'integer',
     ];
+
+    public function technologies()
+    {
+        return $this->belongsToMany(Technology::class, 'project_technology');
+    }
 }

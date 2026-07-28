@@ -17,6 +17,10 @@ class UpdateProjectAction
             'is_published' => $data['is_published'] ?? false,
         ]);
 
+        if (array_key_exists('technologies', $data)) {
+            $project->technologies()->sync($data['technologies'] ?? []);
+        }
+
         return $project;
     }
 }

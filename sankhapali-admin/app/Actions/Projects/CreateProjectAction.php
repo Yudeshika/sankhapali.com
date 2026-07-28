@@ -17,6 +17,8 @@ class CreateProjectAction
             'is_published' => $data['is_published'],
         ]);
 
+        $project->technologies()->sync($data['technologies'] ?? []);
+
         return $project;
     }
 }

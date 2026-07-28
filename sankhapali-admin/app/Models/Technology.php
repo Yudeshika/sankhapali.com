@@ -21,4 +21,8 @@ class Technology extends Model
         'sort_order' => 'integer',
     ];
 
+    Public function projects()
+    {
+        return $this->belongsToMany(Project::class, 'project_technology');
+    }
 }

@@ -42,6 +42,8 @@ class StoreProjectRequest extends FormRequest
             'slug' => ['required', 'string', 'max:256', 'unique:projects'],
             'sort_order' => ['nullable', 'integer'],
             'is_published' => ['nullable', 'boolean'],
+            'screenshots' => ['nullable', 'array'],
+            'screenshots.*' => ['nullable', 'file', 'mimes:jpeg,png,jpg', 'max:2048'],
         ];
     }
 

@@ -1,19 +1,20 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\Requests\Project;
 
+use App\Models\Project;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Str;
 
-class UpdateProjectRequest extends FormRequest
+class StoreProjectRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
      */
     public function authorize(): bool
     {
-        return $this->user()->can('update', $this->route('project'));
+        return $this->user()->can('create', Project::class);
     }
 
     /**
@@ -38,7 +39,7 @@ class UpdateProjectRequest extends FormRequest
             'title' => ['required', 'string', 'max:256'],
             'long_description' => ['nullable', 'string'],
             'short_description' => ['required', 'string', 'max:256'],
-            'slug' => ['required', 'string', 'max:256', 'unique:projects,slug,' . $this->route('project')->id],
+            'slug' => ['required', 'string', 'max:256', 'unique:projects'],
             'sort_order' => ['nullable', 'integer'],
             'is_published' => ['nullable', 'boolean'],
         ];
@@ -54,7 +55,6 @@ class UpdateProjectRequest extends FormRequest
         return [
             'title.required' => 'A title is required',
             'short_description.required' => 'A short description is required',
-            'is_published.required' => 'The publication status is required',
         ];
     }
 }
